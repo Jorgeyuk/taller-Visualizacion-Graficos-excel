@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Excel: Visualización de Gráficos e Imágenes | Jorge Yuk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .excel-green { color: #217346; }
+        .bg-excel { background-color: #217346; }
+        .bg-excel-dark { background-color: #1a5c38; }
+        .gradient-overlay { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Nav -->
+    <header class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="w-8 h-8 excel-green" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16.2,2H7.8C6.8,2,6,2.8,6,3.8v16.4c0,1,0.8,1.8,1.8,1.8h8.4c1,0,1.8-0.8,1.8-1.8V3.8C18,2.8,17.2,2,16.2,2z M16,20H8V4h8V20z M10,6h4v2h-4V6z M10,10h4v2h-4V10z M10,14h4v2h-4V14z"/>
+                </svg>
+                <span class="font-extrabold text-xl tracking-tight text-gray-900 uppercase">Capemax</span>
+            </div>
+            <a href="https://wa.me/526671826964?text=Hola,%20me%20interesa%20el%20taller%20de%20Excel%20de%20Jorge%20Yuk" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-bold text-sm transition hidden md:block">
+                Inscríbete Ahora
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gray-900 text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1551288049-bbda38a10ad5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Dashboard Excel" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-excel px-4 py-1 rounded-md text-sm font-bold mb-4 uppercase tracking-widest">Curso 100% Práctico</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Taller de Excel: <span class="excel-green">Visualización de Gráficos</span> e Imágenes
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                    Transforma datos numéricos en visualizaciones de gran impacto. Domina la creación de reportes y dashboards profesionales para la toma de decisiones.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/526671826964?text=Hola,%20quiero%20más%20información%20sobre%20el%20Taller%20de%20Excel" class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition transform hover:scale-105">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.404c0 6.556-5.331 11.888-11.888 11.888-2.015 0-3.991-.51-5.743-1.477L0 24zm6.191-4.008l.354.21c1.512.897 3.251 1.371 5.044 1.371 5.432 0 9.851-4.419 9.851-9.851 0-2.632-1.025-5.105-2.887-6.967s-4.335-2.887-6.967-2.887c-5.433 0-9.851 4.419-9.851 9.851 0 1.844.516 3.64 1.492 5.199l.235.374-1.01 3.693 3.779-.991z"/></svg>
+                        ¡Apartar mi lugar!
+                    </a>
+                    <a href="#programa" class="flex items-center justify-center border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+                        Ver Temario
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-gray-400">
+                    <span class="font-bold text-white">Próximas Fechas:</span> Sábado 16 y Jueves 21 de Mayo 2026
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Rápida -->
+    <section class="bg-white py-12 border-b">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl font-extrabold excel-green">8 Horas</div>
+                    <div class="text-sm text-gray-500 uppercase font-bold tracking-wider">Duración Total</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-extrabold excel-green">100%</div>
+                    <div class="text-sm text-gray-500 uppercase font-bold tracking-wider">Online & Práctico</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-extrabold excel-green">$1000</div>
+                    <div class="text-sm text-gray-500 uppercase font-bold tracking-wider">Inversión (+IVA)</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-extrabold excel-green">Sinaloa</div>
+                    <div class="text-sm text-gray-500 uppercase font-bold tracking-wider">Zona Horaria</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivo -->
+    <section class="py-20 container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl font-bold mb-6 italic border-l-4 border-green-600 pl-4">¿Por qué tomar este taller?</h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Capacitamos a los participantes para crear reportes y visualizaciones claras, profesionales y útiles en Excel, dominando los tipos de gráficos más importantes, su correcto diseño, el uso práctico de imágenes y la construcción de dashboards con enfoque en la toma de decisiones.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded-full mr-4"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                        <p class="text-gray-700 font-medium">Ejercicios basados en casos reales de negocios.</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-2 rounded-full mr-4"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                        <p class="text-gray-700 font-medium">Metodología paso a paso sin complicaciones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-excel p-8 rounded-2xl text-white shadow-xl">
+                    <h3 class="font-bold text-xl mb-2 italic underline decoration-green-300">Dirigido a:</h3>
+                    <ul class="text-sm space-y-2 opacity-90">
+                        <li>• Contadores y Auditores</li>
+                        <li>• Auxiliares Contables</li>
+                        <li>• Administrativos</li>
+                        <li>• Departamentos de Compras y Ventas</li>
+                        <li>• Público en General</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-2xl border border-gray-200">
+                    <h3 class="font-bold text-xl mb-2 excel-green italic underline">Requisitos:</h3>
+                    <ul class="text-sm space-y-2 text-gray-600 font-medium">
+                        <li>• Manejo de Windows básico</li>
+                        <li>• Microsoft 365 o Excel 2019</li>
+                        <li>• ¡Ganas de aprender!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programa -->
+    <section id="programa" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Programa del Taller</h2>
+                <div class="w-24 h-1 bg-excel mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Temas -->
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-t-4 border-excel">
+                    <span class="text-3xl mb-4 block">01</span>
+                    <h3 class="font-bold text-lg mb-2">Principios Clave</h3>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">Conceptos fundamentales de visualización efectiva en Excel.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-t-4 border-excel">
+                    <span class="text-3xl mb-4 block">02</span>
+                    <h3 class="font-bold text-lg mb-2">Preparación de Datos</h3>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">Cómo estructurar tu información antes de graficar.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-t-4 border-excel">
+                    <span class="text-3xl mb-4 block">03</span>
+                    <h3 class="font-bold text-lg mb-2">Gráficos Esenciales</h3>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">Dominio de los gráficos que todo usuario debe conocer.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-t-4 border-excel">
+                    <span class="text-3xl mb-4 block">04</span>
+                    <h3 class="font-bold text-lg mb-2">Formato Profesional</h3>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">Estética y claridad para que tus gráficos destaquen.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-t-4 border-excel">
+                    <span class="text-3xl mb-4 block">05</span>
+                    <h3 class="font-bold text-lg mb-2">Uso de Multimedia</h3>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">Integración práctica de imágenes, iconos y formas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover border-t-4 border-excel">
+                    <span class="text-3xl mb-4 block">06</span>
+                    <h3 class="font-bold text-lg mb-2">Ejercicio Integrador</h3>
+                    <p class="text-gray-600 text-sm italic leading-relaxed">Creación de un reporte final de alto nivel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expositor -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 flex flex-col items-center">
+            <div class="relative mb-8">
+                <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-excel shadow-2xl">
+                    <!-- He puesto una imagen de ejemplo para que lo veas en el preview. Cuando lo uses, pon tu foto10.jpg aquí -->
+                    <img src="JorgeYuk.png?auto=format&fit=crop&q=80&w=400&h=400" alt="Jorge Yuk" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-2 -right-2 bg-excel text-white p-3 rounded-full shadow-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+            </div>
+            <div class="max-w-4xl text-center">
+                <h2 class="text-gray-400 text-sm font-bold tracking-widest uppercase mb-2">Expositor</h2>
+                <h3 class="text-5xl font-extrabold excel-green italic mb-4">Jorge Yuk</h3>
+                <p class="text-xl font-semibold text-gray-700 mb-6 uppercase tracking-tighter">Consultor en Inteligencia de Negocios y Transformación Digital</p>
+                <div class="w-32 h-1 bg-gray-200 mx-auto mb-8"></div>
+                <p class="text-gray-600 italic leading-relaxed max-w-2xl mx-auto">
+                    Con amplia experiencia en optimización de procesos y herramientas digitales, Jorge te guiará personalmente para que domines el arte de la visualización de datos en Excel y transformes tu manera de presentar resultados.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios y Pago -->
+    <section class="py-20 bg-excel text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Fechas -->
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-3xl border border-white/20">
+                    <h2 class="text-3xl font-bold mb-8 italic">Fechas y Horarios</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-center">
+                            <div class="bg-white text-excel-dark font-bold rounded-lg px-4 py-2 mr-6 text-center">
+                                <span class="block text-xs uppercase">Sábado</span>
+                                <span class="block text-2xl leading-none">16</span>
+                                <span class="block text-xs uppercase">Mayo</span>
+                            </div>
+                            <div>
+                                <p class="text-xl font-bold italic">9:00 AM - 1:00 PM</p>
+                                <p class="text-sm opacity-80 uppercase tracking-widest">Hora de Sinaloa</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-white text-excel-dark font-bold rounded-lg px-4 py-2 mr-6 text-center">
+                                <span class="block text-xs uppercase">Jueves</span>
+                                <span class="block text-2xl leading-none">21</span>
+                                <span class="block text-xs uppercase">Mayo</span>
+                            </div>
+                            <div>
+                                <p class="text-xl font-bold italic">3:00 PM - 7:00 PM</p>
+                                <p class="text-sm opacity-80 uppercase tracking-widest">Hora de Sinaloa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pago -->
+                <div class="bg-white p-10 rounded-3xl text-gray-900 shadow-2xl">
+                    <h2 class="text-2xl font-bold mb-4 italic text-excel">Forma de Pago</h2>
+                    <p class="mb-4 text-sm font-medium text-gray-500 uppercase tracking-widest">Depositar a:</p>
+                    <div class="space-y-4">
+                        <p class="font-bold text-xl italic leading-tight">Guadalupe de los Ángeles Vega León</p>
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="flex justify-between border-b py-2"><span class="text-gray-500">Banco:</span> <span class="font-bold uppercase tracking-widest italic">Banorte</span></div>
+                            <div class="flex justify-between border-b py-2"><span class="text-gray-500">Cuenta:</span> <span class="font-bold">119-392-9705</span></div>
+                            <div class="flex justify-between border-b py-2"><span class="text-gray-500">CLABE:</span> <span class="font-bold">072 730 01193929705 1</span></div>
+                            <div class="flex justify-between border-b py-2"><span class="text-gray-500">Tarjeta:</span> <span class="font-bold">4189 2810 1143 1187</span></div>
+                            <div class="flex justify-between py-2"><span class="text-gray-500">RFC:</span> <span class="font-bold">VELG780802B24</span></div>
+                        </div>
+                        <div class="mt-6 p-4 bg-green-50 rounded-xl text-center border-2 border-dashed border-green-200">
+                            <p class="text-xs font-bold text-green-800 uppercase tracking-widest mb-1 italic">Inversión Garantizada</p>
+                            <p class="text-3xl font-extrabold text-green-600 italic leading-none mb-1">$1000<span class="text-sm font-normal">.00</span></p>
+                            <p class="text-[10px] text-gray-400 font-bold uppercase">(Precio más IVA)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA Final -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 italic leading-tight">¿Tienes dudas? ¡Hablemos!</h2>
+            <p class="text-gray-400 mb-8">Escríbeme directamente por WhatsApp para enviarte más detalles.</p>
+            
+            <div class="flex flex-col items-center space-y-4 mb-10">
+                <a href="https://wa.me/526671826964" class="text-2xl font-bold hover:text-green-400 transition italic tracking-tighter">
+                    📞 Cel: 6671826964
+                </a>
+                <a href="mailto:almarosavega@hotmail.com" class="text-gray-400 hover:text-white transition">
+                    ✉️ almarosavega@hotmail.com
+                </a>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500 italic uppercase tracking-widest">© 2026 Capemax | Taller de Excel Visualización</p>
+                <div class="flex space-x-6 text-sm text-gray-500 font-bold uppercase">
+                    <span>Sinaloa, México</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/526671826964?text=Hola,%20me%20gustaría%20inscribirme%20al%20taller%20de%20Excel" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-110 flex items-center justify-center animate-bounce"
+       title="Contáctanos por WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.404c0 6.556-5.331 11.888-11.888 11.888-2.015 0-3.991-.51-5.743-1.477L0 24zm6.191-4.008l.354.21c1.512.897 3.251 1.371 5.044 1.371 5.432 0 9.851-4.419 9.851-9.851 0-2.632-1.025-5.105-2.887-6.967s-4.335-2.887-6.967-2.887c-5.433 0-9.851 4.419-9.851 9.851 0 1.844.516 3.64 1.492 5.199l.235.374-1.01 3.693 3.779-.991z"/></svg>
+    </a>
+
+</body>
+</html>
